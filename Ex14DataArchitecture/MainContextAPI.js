@@ -1,6 +1,7 @@
 //Context API
 //계층구조의 컴포넌트들 사이에 데이터를 전달-전달-전달-전달 하지 않고
-//일종의 전역변수 같은 곳에 데이터를 
+//일종의 전역변수 같은 곳에 데이터를 데이터를 하나 위치시키고 
+// 그 안에 있는 자식들이 누구나 어디서든 필요할 때 사용하는 기법
 
 import React, { Component } from "react";
 import { Button, Text, View } from "react-native";
