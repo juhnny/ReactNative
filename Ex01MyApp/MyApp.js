@@ -5,7 +5,6 @@
 // 2. State
 // 3.props(Properties)
 
-
 //render 함수가 React 클래스에 의해 돌아가기 때문에 React의 import는 필수
 //react 라이브러리에 존재하는 Component 클래스를 import
 import React, { Component } from 'react'
@@ -52,7 +51,7 @@ class MyApp extends Component{
         //이미지 컴포넌트도 연습해보기. 나중에 수업도 있을 것
         return (
             <View style={style.rootContainer}>
-                <Text style={style.mainText}>Hwllo world</Text>
+                <Text style={style.mainText}>Hello world</Text>
                 <Text style={style.plainText}>I want you</Text>
                 <Button title='button'></Button>
                 <Button title='button' color={'orange'}></Button>
@@ -62,7 +61,7 @@ class MyApp extends Component{
 
                 {/* 이미지 컴포넌트 */}
                 {/* 이미지의 경로를 그냥 '' 문자열로 쓰는 게 아니라 JS의 require() 함수(어떤 이미지를 객체로 만들어줌)를 이용해야만 함 */}
-                <Image source={ require("./image/chair2")} style={ {margin: 4, flex: 1, resizeMode:'center', width:null} }></Image>
+                <Image source={ require("./image/chair2.png")} style={ {margin: 4, flex: 1, resizeMode:'center', width:null} }></Image>
             </View>
         )
 
