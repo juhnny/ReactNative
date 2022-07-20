@@ -10,7 +10,7 @@ function counterReducer(state = {value:0}, action){
         case 'counter/substract' :
             return {value : state.value - 1}
         default :
-            return state
+            return state  
     }
 }
 
