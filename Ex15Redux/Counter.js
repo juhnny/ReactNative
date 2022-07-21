@@ -16,7 +16,7 @@ function Counter(){
             <Text>{counter}</Text>
             <Button title="plus" onPress={increment}></Button>
         </View>
-    )
+    )///
 }
 
 export default Counter
