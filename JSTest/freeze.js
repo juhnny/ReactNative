@@ -17,7 +17,7 @@ console.log(a)
 const o1 = {name:'lee'}
 Object.freeze(o1)
 //여기서 const는 o1이 가리키는 객체를 고정한 것이고
-//freeze()는 o1이 가리키는 객체의 프로퍼티를 고정한 것
+//freeze()는 o1이 가리키는 객체의 프로퍼티를 고정한 것  
 //const와 freeze()를 병행해 사용하면 object의 immutability를 강력히 규제할 수 있음
 
 const o2 = o1
