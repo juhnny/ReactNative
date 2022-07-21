@@ -3,11 +3,11 @@ import { Button, Text, View } from "react-native";
 
 function Counter(){
     //state: counter value
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter2] = useState(100)
 
     //Action: code that causes an update to the state when something happens
     const increment = () => {
-        setCounter(prevCounter => prevCounter + 1)
+        setCounter2(prevCounter => prevCounter + 1)
     }
 
     // View: the UI definition
