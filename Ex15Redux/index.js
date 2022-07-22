@@ -8,6 +8,7 @@ import Main from './Main';
 import Main2 from './Main2';
 import Counter from './Counter';
 import Counter2 from './Counter2';
+import Counter3 from './Counter3';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => Counter2);
+AppRegistry.registerComponent(appName, () => Counter3);
