@@ -33,7 +33,8 @@ const MyList = () => {
     }
 
     const getData = () => {
-        let url = "http://iwibest.dothome.co.kr/ClassumAssignment/getPost.php"
+        // let url = "http://iwibest.dothome.co.kr/ClassumAssignment/getPost.php"
+        let url = "http://iwibest.dothome.co.kr/ClassumAssignment/postUser.php"
         fetch(url)
         .then(res => res.text())
         .then(text => console.log(text))
