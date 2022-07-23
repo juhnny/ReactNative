@@ -23,3 +23,10 @@ Object.freeze(o1)
 const o2 = o1
 o2.name = "park"
 console.log(o1, o2)  
+
+var data = [{name:"Sam1"}, {name:"Sam2"},]
+var data2 = [{name:"Sam3"}]
+var newData = data.concat(data2)
+console.log(data)
+console.log(data2)
+console.log(newData)

@@ -1,29 +1,11 @@
 import React from "react";
 import { Button, Text, View } from "react-native";
-import { createSlice, configureStore, createStore } from "@reduxjs/toolkit";
 import { Provider, useDispatch, useSelector } from "react-redux";
+import store from "./store"
+import counterSlice from "./counterSlice";
+import { up } from "./counterSlice";
 
 //React toolkit을 사용한 예제
-const counterSlice = createSlice({
-    name:'counterS',
-    initialState:{value:100},
-    reducers:{
-        up:(state, action)=>{
-            console.log(action)
-            //action을 직접 지정했을 땐 action.step을 이용
-            // state.value = state.value + action.step
-            
-            //자동으로 생성된 action creator를 이용할 땐 payload를 이용
-            state.value = state.value + action.payload
-        }
-    }
-})
-
-const store = configureStore({
-    reducer:{
-        counterABC:counterSlice.reducer //counterSlice에 있는 여러 리듀서를 자동으로 하나로 만든 게 이 reducer
-    }
-})
 
 /*
 function reducer(state, action){
@@ -51,7 +33,9 @@ const CounterComponent = () => {
                 // dispatch({type:'counterS/up', step:2})
 
                 //자동으로 action을 만드는 방법
-                dispatch(counterSlice.actions.up(2))
+                // dispatch(counterSlice.actions.up(2))
+                // dispatch(up(2)) 
+                dispatch(up({value:2})) 
                 }}></Button>
         </View>
     )
